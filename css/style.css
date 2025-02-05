@@ -1,0 +1,261 @@
+:root {
+    --ig-primary-background: 0, 0, 0;
+    --ig-elevated-separator: 54, 54, 54;
+    --ig-secondary-background: 18, 18, 18;
+    --ig-secondary-text: 168, 168, 168;
+    --system-12-font-size: 12px;
+    --system-13-font-size: 13px;
+    --system-14-font-size: 14px;
+    --grey-5: 206, 206, 206;
+    --ig-primary-text: 245, 245, 245;
+    --ig-primary-button: 0, 149, 246;
+    --ig-error-or-destructive: 237, 73, 86;
+    --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Robota, Helvetica, Arial, sans-serif
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-system);
+}
+
+body {
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+main.main {
+    padding: 0 200px;
+    height: inherit;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column !important;
+}
+
+div.container {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.form-sign-up {
+    border-color: #363636;
+    margin-left: 40px;
+}
+
+div.form-container {
+    padding: 30px 50px;
+    width: 360px;
+    align-items: center;
+    background-color: rgb(var(--ig-primary-background));
+    border: 1px solid rgb(var(--ig-elevated-separator));
+    border-radius: 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font: inherit;
+    font-size: inherit;
+    font-size: 100%;
+    margin: 0 0 10px;
+    position: relative;
+    vertical-align: baseline;
+}
+
+div.form-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+div.form-group > * {
+    width: 100%;
+}
+
+div.button-group {
+    margin: 0 40px 6px 40px;
+}
+
+div.form-group label {
+    border: 0;
+    background-color: transparent;
+    color: rgb(var(--ig-secondary-text));
+    font: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: var(--font-family-system);
+    font-size: var(--system-12-font-size);
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    text-overflow: ellipsis;
+    transform-origin: left;
+    transition: transform ease-out .1s;
+    -moz-user-select: none;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+div.form-group input {
+    height: 35px;
+    width: calc(100% - 13px);
+    color: rgb(var(--grey-5));
+    background-color: rgb(var(--ig-secondary-background));
+    outline: 0;
+    border: 1px solid #555555;
+    border-radius: 3px;
+    padding: 0 6px;
+}
+
+div.form-group input[type="password"] {
+    padding-right: 40px;
+    width: calc(100% - 47px) !important;
+}
+
+div.form-group > input::placeholder, input::-moz-placeholder {
+    color: rgb(var(--ig-secondary-text));
+    font-weight: 300;
+    font-size: var(--system-12-font-size);
+    opacity: 1;
+}
+
+
+div.button-group {
+    margin: 12px 0 10px;
+}
+
+div.button-group button {
+    color: rgb(var(--ig-primary-text));
+    background-color: rgb(var(--ig-primary-button));
+    border-radius: 8px;
+    outline: none;
+    border: 0;
+    padding: 10px;
+    font-weight: 600;
+}
+
+div.or-section {
+    margin-top: 4px;
+    position: relative;
+}
+
+div.or-section span:not(.long) {
+    font-family: var(--font-family-system);
+    color: rgb(var(--ig-secondary-text));
+    background-color: rgb(var(--ig-primary-background));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -32%);
+    font-size: .8125rem;
+    padding: 5px 20px;
+    z-index: 2;
+
+}
+
+div.or-section span.long {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(var(--ig-elevated-separator));
+}
+
+div.facebook-icon {
+    color: rgb(var(--ig-primary-button));
+    font-size: var(--system-13-font-size);
+}
+
+span.forgot-pass {
+    font-size: var(--system-13-font-size);
+    margin-top: 20px;
+}
+
+div.sign-up {
+    font-size: var(--system-13-font-size);
+    color: white;
+}
+
+div.sign-up .link {
+    display: inline !important;
+    margin: 0 !important;
+    color: rgb(var(--ig-primary-button));
+    text-decoration: none;
+}
+
+span.err {
+    color: rgb(var(--ig-error-or-destructive));
+    font-size: var(--system-13-font-size);
+    text-align: center;
+    padding: 15px 0 5px;
+}
+
+
+.imageChange{
+    position: relative;
+}
+
+img.imgCarouselStyle {
+    opacity: 0;
+    width: 260px;
+    height: 550px;
+}
+
+.imageChange > .iphone1 > img{
+    height:570px;
+    width:290px;
+}
+.imageChange > .iphone2 > img:nth-child(1){
+    height:540px;
+    position:absolute;
+    top:-12px;
+    left:-90px;
+    z-index: -1;
+}
+
+.imageChange > .iphone2 > img:nth-child(2){
+    height:513px;
+    position:absolute;
+    top:0;
+    left:-70px;
+    z-index: -2;
+}
+
+.changeImg > img{
+    position:absolute;
+    top:10px;
+    left:16px;
+    transition: 1.5s ease-in;
+}
+
+#showOrHide {
+    cursor: pointer;
+}
+
+@media (max-width: 876px) {
+    .imageChange {
+        display: none;
+    }
+}
