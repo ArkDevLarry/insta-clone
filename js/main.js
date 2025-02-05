@@ -30,16 +30,12 @@ displayImages(0, 3);
 
 function btnFunc() {
     if(email.value !="" && password.value != "" && password.value.length >=6){
-        signIn.style.backgroundColor = "#049bff";
-        signIn.style.cursor="pointer";
+        signIn.classList.remove("not-workingBtn")
         signIn.setAttribute("disabled", false)
-        signIn.style.opacity = "1"
     } else{
 
-        signIn.style.backgroundColor = "";
-        signIn.style.cursor="not-allowed";
+        signIn.classList.add("not-workingBtn")
         signIn.setAttribute("disabled", true)
-        signIn.style.opacity = "0.8"
     }
 }
 

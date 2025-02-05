@@ -10,6 +10,7 @@
     --ig-primary-text: 245, 245, 245;
     --ig-primary-button: 0, 149, 246;
     --ig-error-or-destructive: 237, 73, 86;
+    --ig-link: 224, 241, 255;
     --font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Robota, Helvetica, Arial, sans-serif
 }
 
@@ -36,6 +37,7 @@ body {
 main.main {
     padding: 0 200px;
     height: inherit;
+    height: 90vh;
 }
 
 .center {
@@ -51,7 +53,7 @@ main.main {
 
 div.container {
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(90vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,6 +155,12 @@ div.button-group button {
     border: 0;
     padding: 10px;
     font-weight: 600;
+    opacity: 1;
+    cursor: pointer;
+}
+
+div.button-group button:hover {
+    opacity: 0.8;
 }
 
 div.or-section {
@@ -188,9 +196,14 @@ div.facebook-icon {
     font-size: var(--system-13-font-size);
 }
 
+div.facebook-icon:hover > span {
+    color: rgb(var(--ig-link));
+}
+
 span.forgot-pass {
     font-size: var(--system-13-font-size);
     margin-top: 20px;
+    cursor: pointer;
 }
 
 div.sign-up {
@@ -212,6 +225,14 @@ span.err {
     padding: 15px 0 5px;
 }
 
+div.set-cards .card {
+    cursor: pointer;
+}
+
+.not-workingBtn {
+    cursor: not-allowed !important;
+    opacity: 0.8 !important;
+}
 
 .imageChange{
     position: relative;
